@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <style type="text/css">
+    nav {
+      background-color: purple;
+    }
+    
+    .a {
+      margin: 10px;
+      padding: 40px;
+      color: white;
+      text-anchor: revert;
+    }
+    
+    .d1 {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav classname="navbar">
+    <ul>
+      <div class="d1">
+        <div class="d1">
+          <img src="https://assets.travclan.com/unsafe/0x100/smart/https://s3.ap-south-1.amazonaws.com/com.travclan.b2b2c/logo/450/1599824345.756698/0.7166982706865402/LogoNewPNG_Paryatan_World.png" height="70">
+        </div>
+        <div class="d1">
+          <a class="a" href="/flight">
+            <i class="fas fa-plane"></i> Flight
+          </a>
+        </div>
+        <div class="d1">
+          <a class="a" href="/hotel">
+            <i class="fas fa-hotel"></i> Hotel
+          </a>
+        </div>
+        <div class="d1">
+          <a class="a" href="/packages">
+            <i class="fas fa-suitcase"></i> Packages
+          </a>
+        </div>
+        <div class="d1">
+          <a class="a" href="/cabs">
+            <i class="fas fa-car"></i> Cabs
+          </a>
+        </div>
+        <div class="d1">
+          <a class="a" href="/trains">
+            <i class="fas fa-train"></i> Trains
+          </a>
+        </div>
+      </div>
+    </ul>
+  </nav>
+
+  <%= yield %>
+</body>
+</html>

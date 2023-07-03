@@ -1,0 +1,67 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Flight</title>  
+    <style type="text/css">
+    	
+    	h6{
+    		align-items: center;
+    	}
+
+    	.value{ /* Most modern browsers support this now. */
+		   color:    #909;
+		}
+
+		div{
+			border-width: 1px; 
+			color: black;
+		}
+
+    </style>
+</head>  
+<body> 
+<div><h6>Flights</h6></div>
+<div style="background-color: skyblue; width: 500px;" >
+
+
+
+
+<div>
+	<input type="radio" id="one_way" name="trip" value="one_way"> <label for="html">one_way</label>
+	<input type="radio" id="round_trip" name="trip" value="round_trip"><label for="css">round_trip</label><br>
+</div>
+
+<label class="" for="origin" style="transform: translate(5px, -24px); font-size: 20px;">From</label>
+<input type="text" name="From" placeholder="Delhi">
+
+<label class="" for="origin" style="transform: translate(5px, -24px); font-size: 20px;">To</label>
+<input type="text" name="From" placeholder="Chandigarh"><br><br>
+
+<label class="" for="origin" style="transform: translate(5px, -24px); font-size: 20px;">Depart</label>
+<input type="date" id="date">
+<label class="" for="origin" style="transform: translate(5px, -24px); font-size: 20px;">Return</label>
+<input type="date" id="date"><br><br>
+
+<label for="travellers-select">Travellers</label>
+<select name="travellers" id="travellers-select">
+    <option value="">--Passengers--</option>
+    <option value="dog">Adult</option>
+    <option value="cat">children</option>
+    <option value="hamster">infants</option>
+</select>
+
+
+<label class="" for="origin" style="transform: translate(5px, -24px); font-size: 20px;">Class</label>
+
+<button tabindex="0" type="button" aria-controls="simple-menu" aria-haspopup="true"><span><p > All</p></span><span></span></button>
+
+
+<br><br>
+<button  tabindex="0" type="button"><span>SEARCH FLIGHTS</span></button>
+	
+</div>
+</div>
+
+
+</body>  
+</html>  

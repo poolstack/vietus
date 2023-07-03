@@ -1,0 +1,118 @@
+<style>
+  .card {
+    margin: 40px 12px;
+    width: 360px;
+    height: 240px;
+    background-color: #ffffff;
+    border-bottom: 4px solid #FACC4F;
+    border-radius: 3px;
+    overflow: hidden;
+    float: left;
+    transition: .25s;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    margin-top: 35px;
+    transition: .125s;
+  }
+
+  .clip-polygon {
+    width: auto;
+    height: 220px;
+  }
+
+  .content {
+    margin-top: -50px;
+  }
+
+  .date {
+    font-family: 'Roboto';
+    width: 60px;
+    border-right: 1px dashed #c6cacd;
+    float: left;
+    height: 70px;
+    text-align: center;
+    color: #495f71;
+    padding: 9px 0;
+  }
+
+  .numeric {
+    font-size: 18px;
+  }
+
+  .month {
+    font-size: 11px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    line-height: 12px;
+  }
+
+  .info {
+    float: left;
+    padding: 9px 18px;
+  }
+
+  .trip-name {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 13px;
+    color: #495f71;
+  }
+
+  .trip-contains {
+    display: block;
+    font-size: 16px;
+    padding: 6px 0;
+  }
+
+  .trip-contains i {
+    padding-right: 3px;
+    color: #7DCD75;
+  }
+
+  i.draft {
+    color: #c6cacd;
+  }
+
+  .clip-polygon {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 167px, 53px 167px, 60px 80%, 67px 167px, 0% 167px);
+  }
+</style>
+
+<link rel="stylesheet" href="https://i.icomoon.io/public/62ac9c9114/Webfont/style.css">
+<div id="wrapper">
+  <div class="card">
+    <img src="http://media.expedia.com/mobiata/mobile/apps/ExpediaBooking/TabletDestinations/images/SFO.jpg" class="clip-polygon">
+    <div class="content">
+      <div class="date"><span class="numeric">26</span><span class="month">Jan</span></div>
+      <div class="info"><span class="trip-name">San Francisco, CA</span><span class="trip-contains"><i class="icon-flightsalt"></i> <i class="icon-hotelsalt"></i> <i class="icon-trainalt"></i> <i class="icon-trainalt"></i> <i class="icon-flightsalt"></i></span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="http://media.expedia.com/mobiata/mobile/apps/ExpediaBooking/TabletDestinations/images/JFK.jpg" class="clip-polygon">
+    <div class="content">
+      <div class="date"><span class="numeric">3</span><span class="month">Mar</span></div>
+      <div class="info"><span class="trip-name">New York, NY</span><span class="trip-contains"><i class="icon-flightsalt"></i> <i class="icon-hotelsalt draft"></i> <i class="icon-flightsalt"></i></span></div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="http://media.expedia.com/mobiata/mobile/apps/ExpediaBooking/TabletDestinations/images/SFO.jpg" class="clip-polygon">
+    <div class="content">
+      <div class="date"><span class="numeric">26</span><span class="month">Jan</span></div>
+      <div class="info"><span class="trip-name">San Francisco, CA</span><span class="trip-contains"><i class="icon-flightsalt"></i> <i class="icon-hotelsalt"></i> <i class="icon-trainalt"></i> <i class="icon-trainalt"></i> <i class="icon-flightsalt"></i></span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="http://media.expedia.com/mobiata/mobile/apps/ExpediaBooking/TabletDestinations/images/JFK.jpg" class="clip-polygon">
+    <div class="content">
+      <div class="date"><span class="numeric">3</span><span class="month">Mar</span></div>
+      <div class="info"><span class="trip-name">New York, NY</span><span class="trip-contains"><i class="icon-flightsalt"></i> <i class="icon-hotelsalt draft"></i> <i class="icon-flightsalt"></i></span></div>
+    </div>
+  </div>
+
+</div>
