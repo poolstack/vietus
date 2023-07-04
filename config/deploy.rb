@@ -6,7 +6,9 @@ set :application, "vietus"
 set :repo_url, "git@github.com:poolstack/vietus.git"
 # restart app by running: touch tmp/restart.txt
 # at server machine
-set :user, 'ubuntu'
+set :user,  'ubuntu'
+
+set :branch, "main" # Update branch name here
 
 set :passenger_restart_with_touch, true
 set :rails_env, :development
