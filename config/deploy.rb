@@ -17,6 +17,7 @@ set :puma_threads, [4, 16]
 set :pty, true
 set :use_sudo, false
 set :stage, :production
+set :rbenv_ruby, 'ruby_version'
 set :deploy_via, :remote_cache
 set :puma_bind, "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
 set :puma_state, "#{shared_path}/tmp/pids/puma.state"
@@ -27,6 +28,7 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, false
 set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
+set :rbenv_ruby, '2.6.5'
 
 # set :deploy_to, "/var/www/vietus"
 namespace :puma do
