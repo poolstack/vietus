@@ -63,4 +63,5 @@
 # set :stage, :production
 # set :rails_env, :production
 # set :branch, "master"
-# server "13.234.136.139", user: "ubuntu", roles: %w{web app db}
+# server "13.233.129.203", user: "ubuntu", roles: %w{web app db}
+

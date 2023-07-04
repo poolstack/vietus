@@ -6,6 +6,8 @@ set :application, "vietus"
 set :repo_url, "git@github.com:poolstack/vietus.git"
 # restart app by running: touch tmp/restart.txt
 # at server machine
+set :user,'ubuntu'
+
 set :passenger_restart_with_touch, true
 set :rails_env, :development
 set :puma_threads, [4, 16]
@@ -22,7 +24,7 @@ set :puma_error_log, "#{release_path}/log/puma.access.log"
 set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, false 
-set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
+set :deploy_to,"/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 
 #set :deploy_to, "/var/www/vietus"
 namespace :puma do
