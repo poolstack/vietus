@@ -1,6 +1,6 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.17.3"
-server '3.110.118.122', user: "ubuntu",roles: [:web, :app, :db], primary: true
+server '3.108.52.201', user: "ubuntu",roles: [:web, :app, :db], primary: true
 
 set :application, "vietus"
 set :repo_url, "git@github.com:poolstack/vietus.git"
