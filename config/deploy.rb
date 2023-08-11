@@ -28,7 +28,7 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, false
 set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
-set :rbenv_ruby, '2.6.5'
+set :rbenv_ruby, '3.0.2'
 
 # set :deploy_to, "/var/www/vietus"
 namespace :puma do
